@@ -5,8 +5,7 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build bonfire-store",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "ng build bonfire-store"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

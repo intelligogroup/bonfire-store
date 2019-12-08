@@ -3,15 +3,18 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --hmr ",
+    "start": "ng serve --hmr --port=4444",
     "start:lib": "ng-packagr -w ng-package.json",
     "build": "ng build",
     "build:lib": "ng-packagr -p ng-package.json",
     "build:bonfire": "ng build bonfire-store --watch",
     "test": "ng test",
     "lint": "ng lint",
+    "copy": "cp  -R dist/bonfire-store projects/bonfire-store",
+    "clean:lib": "rm -rf projects/bonfire-store/dist",
+    "change:name": "mv projects/bonfire-store/bonfire-store projects/bonfire-store/dist",
     "e2e": "ng e2e",
-    "publish": "cd projects/bonfire-store/ && npm publish &&  cp -i -R dist ../../ "
+    "publish": "ng build bonfire-store && npm run clean:lib && npm run copy  && npm run change:name  && cd projects/bonfire-store/  && npm publish"
   },
   "private": true,
   "dependencies": {

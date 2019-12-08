@@ -1,13 +1,10 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
-import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTable } from '@angular/material/table';
 import { BonfireStore, BonfireStoreService, FromStore } from 'bonfire-store';
+import { filter } from 'rxjs/operators';
 import { Store } from '../app.module';
 import { EditFoodDialogComponent } from '../shared/components/edit-food-dialog/edit-food-dialog.component';
-import { Food, TableDataSource } from './table-datasource';
-import { filter } from 'rxjs/operators';
+import { Food } from './table-datasource';
 
 @Component({
   selector: 'app-table',

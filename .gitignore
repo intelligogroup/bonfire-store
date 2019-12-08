@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/projects/bonfire-store/dist
 # Only exists if Bazel was run
 /bazel-out
 
