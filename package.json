@@ -10,7 +10,8 @@
     "build:bonfire": "ng build bonfire-store --watch",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "publish": "cd projects/bonfire-store/ && npm publish &&  cp -i -R dist ../../ "
   },
   "private": true,
   "dependencies": {
