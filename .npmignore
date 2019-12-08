@@ -3,3 +3,5 @@ esm5
 src
 tsconfig.json
 .gitignore
+test-npm/node_modules
+dist
