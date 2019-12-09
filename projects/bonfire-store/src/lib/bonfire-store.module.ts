@@ -1,6 +1,6 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { BonfireStoreComponent } from './bonfire-store.component';
 import { BonfireStore } from './bonfire-store.model';
+import { BonfireStoreComponent } from './bonfire-store.component';
 
 
 // @dynamic
@@ -13,7 +13,7 @@ import { BonfireStore } from './bonfire-store.model';
 
 
 export class BonfireStoreModule {
-  static forRoot(useValue: BonfireStore.Config = {}): ModuleWithProviders<BonfireStoreModule> {
+  static forRoot(useValue: BonfireStore.StoreData = {}): ModuleWithProviders<BonfireStoreModule> {
     return {
       ngModule: BonfireStoreModule,
       providers: [

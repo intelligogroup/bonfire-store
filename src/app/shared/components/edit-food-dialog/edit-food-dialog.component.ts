@@ -46,7 +46,7 @@ export class EditFoodDialogComponent implements OnInit {
     // this.dialogRef.close({ shouldDelete: true });
     const { food } = this.storeService.store;
     food.splice(this.data.index, 1);
-  this.dialogRef.close();
+    this.dialogRef.close();
 
   }
 

@@ -1,7 +1,7 @@
 {
   "name": "@intelligo.ai/bonfire-store",
-  "version": "0.0.14",
-  "description": "Open source decorators utils for angular",
+  "version": "0.0.15",
+  "description": "Open source reactive store for angular",
   "repository": {
     "type": "git",
     "url": "https://github.com/intelligogroup/bonfire-store"

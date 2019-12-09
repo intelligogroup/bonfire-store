@@ -15,11 +15,11 @@ export namespace BonfireStore {
 
   export type ServiceTuple<T = any, J = any> = [string, BonfireStoreService<T, J>];
 
-  export interface Config<T = any> {
+  export interface StoreData<T = any> {
     [key: string]: T;
   }
 
-  export const BONFIRE_CONFIG = new InjectionToken<Config>('BONFIRE_CONFIG');
+  export const BONFIRE_CONFIG = new InjectionToken<StoreData>('BONFIRE_CONFIG');
 
   export class Store<T> {
     @WithObservable() public store: T; private store$: BehaviorSubject<T>;

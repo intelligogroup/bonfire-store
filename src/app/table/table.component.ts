@@ -16,9 +16,10 @@ export class TableComponent implements AfterViewInit, OnInit {
   @FromStore('food') food$: BonfireStore.FromStore<Food>;
 
   constructor(
-    private storeService: BonfireStoreService<Store>,
+    protected storeService: BonfireStoreService<Store>,
     private dialog: MatDialog
-  ) { }
+  ) {
+  }
 
 
   ngOnInit() {
@@ -38,11 +39,11 @@ export class TableComponent implements AfterViewInit, OnInit {
         filter(r => !!r)
       )
       .subscribe((res: { value: Food, shouldDelete: boolean }) => {
-        if (res.shouldDelete) {
-          this.storeService.store.food.splice(index, 1);
-        } else {
-          this.storeService.store.food[index] = res.value;
-        }
+        // if (res.shouldDelete) {
+        //   this.storeService.store.food.splice(index, 1);
+        // } else {
+        //   this.storeService.store.food[index] = res.value;
+        // }
       });
 
 

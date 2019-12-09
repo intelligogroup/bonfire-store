@@ -14,7 +14,7 @@
     "clean:lib": "rm -rf projects/bonfire-store/dist",
     "change:name": "mv projects/bonfire-store/bonfire-store projects/bonfire-store/dist",
     "e2e": "ng e2e",
-    "publish": "ng build bonfire-store && npm run clean:lib && npm run copy  && npm run change:name  && cd projects/bonfire-store/  && npm publish"
+    "publish": "ng build bonfire-store && npm run clean:lib && npm run copy  && npm run change:name  && cd projects/bonfire-store/dist  && npm publish"
   },
   "private": true,
   "dependencies": {
