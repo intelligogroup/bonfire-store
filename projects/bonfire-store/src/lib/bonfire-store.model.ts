@@ -11,12 +11,22 @@ export namespace BonfireStore {
 
   export type ErrorType = 'SERVICE_NOT_FOUND' | 'LOCAL_STORE_NOT_FOUND';
 
-  export type FromStore<T = any> = Observable<T> | T | any;
+  export type FromStore<T = any> = Observable<T> | T;
+
+  export type LocalStore<T extends {}, J = any> = T & {
+    store?: T;
+    get$?: (key?: keyof T, callback?: (value: BonfireStore.ValueOf<T>) => void) => Observable<T>;
+    set$?: (key: keyof T, value: J) => void;
+  };
+
 
   export type ServiceTuple<T = any, J = any> = [string, BonfireStoreService<T, J>];
 
   export interface StoreData<T = any> {
     [key: string]: T;
+  }
+  export interface StoreComponent<T = StoreData> {
+    createLocalStore(initialValue: T): Store<T>;
   }
 
   export const BONFIRE_CONFIG = new InjectionToken<StoreData>('BONFIRE_CONFIG');
@@ -34,7 +44,7 @@ export namespace BonfireStore {
       callback?: (value: BonfireStore.ValueOf<T>) => void
     ): Observable<BonfireStore.ValueOf<T>> {
 
-      const mapCallback = store => key ? store[key as keyof T] : store;
+      const mapCallback = store => key && !!store ? store[key as keyof T] : store;
 
 
       return this.store$

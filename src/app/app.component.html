@@ -1,12 +1,13 @@
-<app-nav
-  ><!--The content below is only a placeholder and can be replaced.-->
-<div class="main-container">
-  <div class="top-container">
-    <app-form-container></app-form-container>
+<app-nav>
+  <div class="main-container">
+    <div class="top-container">
+      <app-form-container></app-form-container>
+    </div>
+    <div class="bottom-container">
+      <app-table>
+      </app-table>
+    </div>
   </div>
-  <div class="bottom-container">
-    <app-table>
-    </app-table>
-  </div>
-</div>
+
+  <button (click)="saveData()" class="save-btn" color="primary" mat-fab>Save</button>
 </app-nav>
