@@ -23,7 +23,6 @@
     "type": "git",
     "url": "git+https://github.com/intelligogroup/bonfire-store.git"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.3",
     "@angular/cdk": "~8.2.3",
