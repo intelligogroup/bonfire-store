@@ -1,5 +1,5 @@
 {
-  "name": "@intelligo.ai/bonfire-store",
+  "name": "@intelligogroup/bonfire-store",
   "version": "0.0.15",
   "description": "Open source reactive store for angular",
   "repository": {
@@ -20,21 +20,21 @@
   "author": "Tzach Bonfil <https://tzachbonfilportfolio.web.app/>",
   "license": "MIT",
   "dependencies": {
-    "@intelligo.ai/bonfire": "^1.0.912",
+    "@intelligogroup/bonfire": "^1.0.912",
     "tslib": "^1.9.0"
   },
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
   },
-  "main": "bundles/intelligo.ai-bonfire-store.umd.js",
-  "module": "fesm5/intelligo.ai-bonfire-store.js",
-  "es2015": "fesm2015/intelligo.ai-bonfire-store.js",
-  "esm5": "esm5/intelligo.ai-bonfire-store.js",
-  "esm2015": "esm2015/intelligo.ai-bonfire-store.js",
-  "fesm5": "fesm5/intelligo.ai-bonfire-store.js",
-  "fesm2015": "fesm2015/intelligo.ai-bonfire-store.js",
-  "typings": "intelligo.ai-bonfire-store.d.ts",
-  "metadata": "intelligo.ai-bonfire-store.metadata.json",
+  "main": "bundles/intelligogroup-bonfire-store.umd.js",
+  "module": "fesm5/intelligogroup-bonfire-store.js",
+  "es2015": "fesm2015/intelligogroup-bonfire-store.js",
+  "esm5": "esm5/intelligogroup-bonfire-store.js",
+  "esm2015": "esm2015/intelligogroup-bonfire-store.js",
+  "fesm5": "fesm5/intelligogroup-bonfire-store.js",
+  "fesm2015": "fesm2015/intelligogroup-bonfire-store.js",
+  "typings": "intelligogroup-bonfire-store.d.ts",
+  "metadata": "intelligogroup-bonfire-store.metadata.json",
   "sideEffects": false
 }

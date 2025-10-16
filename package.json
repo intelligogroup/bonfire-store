@@ -1,5 +1,5 @@
 {
-  "name": "@intelligogroup/ßbonfire-store-app",
+  "name": "@intelligogroup/bonfire-store-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -34,7 +34,7 @@
     "@angular/platform-browser": "~8.0.3",
     "@angular/platform-browser-dynamic": "~8.0.3",
     "@angular/router": "~8.0.3",
-    "@intelligogroup/bonfire": "^1.0.912",
+    "@intelligogroup/bonfire": "^1.1.0",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
