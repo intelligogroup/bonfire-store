@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@intelligo.ai/bonfire-store": "0.0.14"
+    "@intelligogroup/bonfire-store": "0.0.14"
   }
 }

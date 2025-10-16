@@ -1,5 +1,5 @@
 {
-  "name": "@intelligo.ai/bonfire-store",
+  "name": "@intelligogroup/bonfire-store",
   "version": "0.0.15",
   "description": "Open source reactive store for angular",
   "scripts": {
@@ -25,7 +25,7 @@
   "author": "Tzach Bonfil <https://tzachbonfilportfolio.web.app/>",
   "license": "MIT",
   "dependencies": {
-    "@intelligo.ai/bonfire": "^1.0.912"
+    "@intelligogroup/bonfire": "^1.0.912"
   },
   "peerDependencies": {
     "@angular/common": "^8.2.14",

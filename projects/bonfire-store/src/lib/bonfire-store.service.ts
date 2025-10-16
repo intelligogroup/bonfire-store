@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@angular/core';
-import { WithObservable } from '@intelligo.ai/bonfire';
+import { WithObservable } from '@intelligogroup/bonfire';
 import { BehaviorSubject } from 'rxjs';
 import { BonfireStore } from './bonfire-store.model';
 

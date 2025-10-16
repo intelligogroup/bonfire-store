@@ -1,4 +1,4 @@
-import { WithObservable } from '@intelligo.ai/bonfire';
+import { WithObservable } from '@intelligogroup/bonfire';
 import { InjectionToken } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
